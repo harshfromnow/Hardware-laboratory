@@ -13,6 +13,3 @@ module adder(
 	else cout=1'b0;
 	end
 endmodule
-
-//TESTBENCH
-
