@@ -46,4 +46,21 @@ endmodule
 
 //TESTBENCH
 
+module trafficlight_tb;
+	reg clk;
+	wire nsgreen;
+	wire nsred;
+	wire ewgreen;
+	wire ewred;
+	
+	trafficlight uut(.clk(clk),.nsgreen(nsgreen),.nsred(nsred),.ewgreen(ewgreen),.ewred(ewred));
+	
+	initial begin
+		clk=1;
+		forever #5 clk=~clk;
+		#100;
+		$finish;
+	end
+endmodule
+
 
