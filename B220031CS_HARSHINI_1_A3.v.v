@@ -15,7 +15,6 @@ module B220031CS_HARSHINI_1(
 	if (read_write==0)
 		out <= data;
 	else begin
-		out <= 0;
 		data <= in;
 	end
 	end
